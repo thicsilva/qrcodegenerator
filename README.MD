@@ -70,7 +70,7 @@ AWS_BUCKET_NAME=your_bucket_name
 ### AWS S3 Configuration
 
 1. Create an S3 bucket in your AWS account
-2. Update the `AWS_BUCKET_NAME` in your `.env` file or run command
+2. Update the `AWS_BUCKET_NAME` in your `.env` file or `S3Options__BucketName` if you are using Local Development command
 3. Ensure your AWS credentials have appropriate permissions to access the S3 bucket
 
 ## API Endpoints
