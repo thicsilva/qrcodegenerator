@@ -1,0 +1,13 @@
+﻿services:
+  qrcodegenerator:
+    image: qrcodegenerator
+    env_file:
+      - ".env"
+    environment:
+      - S3Options:Region=$AWS_REGION
+      - S3Options:BucketName=$AWS_BUCKET_NAME
+    build:
+      context: .
+      dockerfile: QrCodeGenerator/Dockerfile
+    ports:
+      - "8080:8080"
