@@ -17,7 +17,6 @@ A .NET application that generates QR codes and stores them in AWS S3. This proje
         - [Docker Deployment](#docker-deployment)
     - [AWS S3 Configuration](#aws-s3-configuration)
 - [API Endpoints](#api-endpoints)
-- [License](#license)
 
 ## How to Use
 
