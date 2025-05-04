@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AWSSDK.S3" Version="4.0.0.1" />
+      <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.4" />
+      <PackageReference Include="SixLabors.ImageSharp" Version="3.1.8" />
+      <PackageReference Include="ZXing.Net" Version="0.16.10" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <Content Include="..\.dockerignore">
+          <Link>.dockerignore</Link>
+        </Content>
+    </ItemGroup>
+    
+    <ItemGroup>
+      <Folder Include="Properties\" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <None Remove="Properties\launchSettings.json" />
+    </ItemGroup>
+
+</Project>

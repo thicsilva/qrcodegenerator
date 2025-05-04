@@ -1,0 +1,16 @@
+@QrCodeGenerator_HostAddress = http://localhost:8080
+
+POST {{QrCodeGenerator_HostAddress}}/qrcode/
+Content-Type: application/json
+
+{
+    "text": "https://aws.amazon.com/pt/sdk-for-net/"
+}
+###
+
+POST {{QrCodeGenerator_HostAddress}}/qrcode/local
+Content-Type: application/json
+
+{
+  "text": "https://aws.amazon.com/pt/sdk-for-net/"
+}
